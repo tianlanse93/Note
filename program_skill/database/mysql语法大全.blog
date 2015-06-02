@@ -1,0 +1,42 @@
+mysql语法大全
+
+1、创建数据库
+create database xxx；
+
+2、查看所有的数据库
+show databases;
+
+3、选择数据库
+use xxx;
+
+4、查看数据库里面的所有的表
+show tables;
+
+5、查看某个表的情况
+desc student;
+
+6、创建一个表
+create table <表名> (<字段名1> <类型1> [,..<字段名n> <类型n>]);
+例子：
+create table MyClass(
+    id int(4) not null primary key auto_increment,
+    name char(20) not null,
+    sex int(4) not null default '0',
+    degree double(16,2));
+
+7、往表里新增一个字段
+例子：
+alter table tablename add age int;
+
+8、删除表里面一个字段
+例子：
+alter table student drop column birthday;
+
+9、往表里插入一条数据_1
+例子：
+insert into student(id,name,age) values(2,'hanyuan',30);
+
+9、往表里插入一条数据_2
+例子：
+insert into student values(1,'hongten',20);
+
