@@ -1,0 +1,5 @@
+# 本地repo关联远程repo 
+1.git remote add origin https://github.com/tianlanse93/Note.git
+# 修改git config
+2.git config --local user.name = "周莅"
+
